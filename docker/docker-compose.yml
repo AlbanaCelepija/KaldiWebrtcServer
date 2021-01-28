@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   kaldi:
-    image: "smartcommunitylab/cloud-asr-worker-nnet3-es"
+    image: "smartcommunitylab/kaldi-online-tcp:spanishmodel"
   web:
     image: "smartcommunitylab/kaldi-webrtc"
     volumes:
