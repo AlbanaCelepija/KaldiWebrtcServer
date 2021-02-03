@@ -2,7 +2,6 @@ version: '3.3'
 services:
   kaldi:
     image: "smartcommunitylab/kaldi-online-tcp:spanishmodel"
-    environment:
     ports:
       - "5050:5050"
   web:
