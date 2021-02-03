@@ -2,9 +2,13 @@ version: '3.3'
 services:
   kaldi:
     image: "smartcommunitylab/kaldi-online-tcp:spanishmodel"
+    environment:
+    ports:
+      - "5050:5050"
   web:
     image: "smartcommunitylab/kaldi-webrtc"
     volumes:
       - ./servers.json:/server/servers.json
     ports:
-      - "8080:8080"
+      - "8081:8080"
+      - "443:443"

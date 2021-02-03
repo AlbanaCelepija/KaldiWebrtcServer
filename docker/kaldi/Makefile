@@ -1,7 +1,7 @@
 all: build
 
 build:
-	docker build -t smartcommunitylab/kaldi-online-tcp .
+	docker build -t albanacelepija/kaldi-online-tcp .
 
 upload:
-	docker push smartcommunitylab/kaldi-online-tcp
+	docker push albanacelepija/kaldi-online-tcp

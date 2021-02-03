@@ -5,7 +5,7 @@ RUN 7z x -sdel final.7z.001
 RUN 7z x -sdel HCLG.7z.001
 RUN rm -r *7z*
 
-FROM smartcommunitylab/kaldi-online-tcp
+FROM albanacelepija/kaldi-online-tcp:first
 COPY --from=unzip /model /model
 WORKDIR /model
 ENTRYPOINT ["online2-tcp-nnet3-decode-faster",\
